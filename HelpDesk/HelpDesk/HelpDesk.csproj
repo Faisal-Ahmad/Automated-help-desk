@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08288FCC-4B0F-456B-9CB1-E1810E6B6D78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelpDesk</RootNamespace>
+    <AssemblyName>HelpDesk</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppointmentRequest.Designer.cs">
+      <DependentUpon>AppointmentRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordEmployee.Designer.cs">
+      <DependentUpon>ChangePasswordEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangeRoom.Designer.cs">
+      <DependentUpon>ChangeRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurrentStatus.Designer.cs">
+      <DependentUpon>CurrentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteEmployee.Designer.cs">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailsEmployee.Designer.cs">
+      <DependentUpon>DetailsEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enquiry.Designer.cs">
+      <DependentUpon>Enquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoSeekHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoSeekHelp.Designer.cs">
+      <DependentUpon>GoSeekHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="node.cs" />
+    <Compile Include="NoticeBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoticeBoard.Designer.cs">
+      <DependentUpon>NoticeBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostNotice.Designer.cs">
+      <DependentUpon>PostNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostNoticeEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostNoticeEmployee.Designer.cs">
+      <DependentUpon>PostNoticeEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomMap.designer.cs">
+      <DependentUpon>RoomMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEmplyee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchEmplyee.Designer.cs">
+      <DependentUpon>SearchEmplyee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeekHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeekHelpForm.Designer.cs">
+      <DependentUpon>SeekHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeVisitorList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeeVisitorList.Designer.cs">
+      <DependentUpon>SeeVisitorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendAppointmentRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendAppointmentRequest.Designer.cs">
+      <DependentUpon>SendAppointmentRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentRequest.resx">
+      <DependentUpon>AppointmentRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordEmployee.resx">
+      <DependentUpon>ChangePasswordEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRoom.resx">
+      <DependentUpon>ChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentStatus.resx">
+      <DependentUpon>CurrentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEmployee.resx">
+      <DependentUpon>DeleteEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsEmployee.resx">
+      <DependentUpon>DetailsEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry.resx">
+      <DependentUpon>Enquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoSeekHelp.resx">
+      <DependentUpon>GoSeekHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoticeBoard.resx">
+      <DependentUpon>NoticeBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostNotice.resx">
+      <DependentUpon>PostNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostNoticeEmployee.resx">
+      <DependentUpon>PostNoticeEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoomMap.resx">
+      <DependentUpon>RoomMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchEmplyee.resx">
+      <DependentUpon>SearchEmplyee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeekHelpForm.resx">
+      <DependentUpon>SeekHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeVisitorList.resx">
+      <DependentUpon>SeeVisitorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendAppointmentRequest.resx">
+      <DependentUpon>SendAppointmentRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Logic_Layer\Business_Logic_Layer.csproj">
+      <Project>{67d0d7a8-bf05-4fe3-808e-476256b7cd97}</Project>
+      <Name>Business_Logic_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data_Access_Layer\Data_Access_Layer.csproj">
+      <Project>{d8a8f50c-3228-4d6c-a206-0bdd21df2ea5}</Project>
+      <Name>Data_Access_Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

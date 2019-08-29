@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="H_Desk_Database" Class="DataConDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\H_Desk_Database.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Data_Access_Layer.Properties.Settings" SettingsPropertyName="H_Desk_DatabaseConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Emp_Details" Member="Emp_Details">
+    <Type Name="Emp_Detail">
+      <Column Name="Emp_Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Curr_Status" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Notice" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Given_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Given_Time" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="IP_Address" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Emp_Table" Member="Emp_Tables">
+    <Type Name="Emp_Table">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Qualification" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Admin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Room_No_Table" Member="Room_No_Tables">
+    <Type Name="Room_No_Table">
+      <Column Name="Room_No" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Emp_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Reserved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Appointment_Table" Member="Appointment_Tables">
+    <Type Name="Appointment_Table">
+      <Column Name="A_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Purpose" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FeedBack" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Req_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Time" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Emp_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Seen" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Accept" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
